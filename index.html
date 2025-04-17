@@ -58,37 +58,20 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             autoplay: {
-                delay: 5000, // Set the delay between slides in milliseconds (e.g., 3000ms = 3 seconds)
-                disableOnInteraction: false, // Allow manual navigation to stop autoplay
+                delay: 5000, 
             },
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true, // Make pagination bullets clickable
+                clickable: true,
             },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-         
             keyboard: true,
             slideToClickedSlide: true,
-       
         });
     </script>
-    <!-- <script>
-        var swiper = new Swiper(".mySwiper", {
-          cssMode: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-          },
-          mousewheel: true,
-          keyboard: true,
-        });
-      </script> -->
 </body>
 
 </html>
