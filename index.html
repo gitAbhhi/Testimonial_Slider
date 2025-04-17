@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://i.pinimg.com/736x/fb/53/9b/fb539be5f7af96e0dc090b7f209e5a45.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <h1>Testimonial Slider</h1>
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/fb/53/9b/fb539be5f7af96e0dc090b7f209e5a45.jpg" alt="img">
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Odio modi, quis dignissimos recusandae unde fugit vitae suscipit vel necessitatibus optio
+                            deserunt
+                            commodi cumque aspernatur temporibus deleniti. Aliquid ad ipsum quis!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/ce/5f/c4/ce5fc404b7886ac68a76087ee62c1347.jpg" alt="img">
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Odio modi, quis dignissimos recusandae unde fugit vitae suscipit vel necessitatibus
+                            optio deserunt
+                            commodi cumque aspernatur temporibus deleniti. Aliquid ad ipsum quis!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/81/a1/83/81a183774d585c5d139f61a45bb52fda.jpg" alt="img">
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Odio modi, quis dignissimos recusandae unde fugit vitae suscipit vel necessitatibus
+                            optio deserunt
+                            commodi cumque aspernatur temporibus deleniti. Aliquid ad ipsum quis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 5000, // Set the delay between slides in milliseconds (e.g., 3000ms = 3 seconds)
+                disableOnInteraction: false, // Allow manual navigation to stop autoplay
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true, // Make pagination bullets clickable
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+         
+            keyboard: true,
+            slideToClickedSlide: true,
+       
+        });
+    </script>
+    <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script> -->
+</body>
+
+</html>
